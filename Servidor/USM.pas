@@ -24,6 +24,16 @@ type
     DSTelefone: TDataSource;
     SQLEndereco: TSQLDataSet;
     SQLTelefone: TSQLDataSet;
+    SQLContatoCODIGO_CONTATO: TIntegerField;
+    SQLContatoNOME_CONTATO: TStringField;
+    SQLContatoDTNASCIMENTO_CONTATO: TDateField;
+    SQLEnderecoCODIGO_ENDERECO: TIntegerField;
+    SQLEnderecoRUA_ENDERECO: TStringField;
+    SQLEnderecoNUMERO_ENDERECO: TStringField;
+    SQLEnderecoCONTATO_CODCONTATO: TIntegerField;
+    SQLTelefoneCODIGO_TELEFONE: TIntegerField;
+    SQLTelefoneNUMERO_TELEFONE: TStringField;
+    SQLTelefoneCONTATO_CODCONTATO: TIntegerField;
   private
     { Private declarations }
   public

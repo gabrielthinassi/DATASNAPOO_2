@@ -65,6 +65,18 @@ object SM: TSM
     SQLConnection = CON_FB
     Left = 64
     Top = 120
+    object SQLContatoCODIGO_CONTATO: TIntegerField
+      FieldName = 'CODIGO_CONTATO'
+      Required = True
+    end
+    object SQLContatoNOME_CONTATO: TStringField
+      FieldName = 'NOME_CONTATO'
+      Required = True
+      Size = 40
+    end
+    object SQLContatoDTNASCIMENTO_CONTATO: TDateField
+      FieldName = 'DTNASCIMENTO_CONTATO'
+    end
   end
   object DSPContato: TDataSetProvider
     DataSet = SQLContato
@@ -156,6 +168,23 @@ object SM: TSM
     SQLConnection = CON_FB
     Left = 28
     Top = 288
+    object SQLEnderecoCODIGO_ENDERECO: TIntegerField
+      FieldName = 'CODIGO_ENDERECO'
+      Required = True
+    end
+    object SQLEnderecoRUA_ENDERECO: TStringField
+      FieldName = 'RUA_ENDERECO'
+      Required = True
+      Size = 30
+    end
+    object SQLEnderecoNUMERO_ENDERECO: TStringField
+      FieldName = 'NUMERO_ENDERECO'
+      Size = 5
+    end
+    object SQLEnderecoCONTATO_CODCONTATO: TIntegerField
+      FieldName = 'CONTATO_CODCONTATO'
+      Required = True
+    end
   end
   object SQLTelefone: TSQLDataSet
     CommandText = 
@@ -174,5 +203,18 @@ object SM: TSM
     SQLConnection = CON_FB
     Left = 98
     Top = 288
+    object SQLTelefoneCODIGO_TELEFONE: TIntegerField
+      FieldName = 'CODIGO_TELEFONE'
+      Required = True
+    end
+    object SQLTelefoneNUMERO_TELEFONE: TStringField
+      FieldName = 'NUMERO_TELEFONE'
+      Required = True
+      Size = 11
+    end
+    object SQLTelefoneCONTATO_CODCONTATO: TIntegerField
+      FieldName = 'CONTATO_CODCONTATO'
+      Required = True
+    end
   end
 end
